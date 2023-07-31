@@ -29,3 +29,20 @@ const retirementYear = (birthYear, firstName) => {
 }
 
 console.log(retirementYear(1993, "sam"))
+
+
+
+function cutFruitPieces(fruit) {
+    return fruit * 3;
+}
+
+function fruittProcessor(apples, oranges) {
+    
+    const appelPieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `juice with ${appelPieces} piece of apple and ${orangePieces} piece of orange`
+    return juice;
+}
+
+console.log(fruittProcessor(2, 4));
